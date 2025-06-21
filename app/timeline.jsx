@@ -12,11 +12,11 @@ const timeline = () => {
                 {data.map((items) => (
                     <div key={items.heading}>
                     <div  className='flex justify-between items-center'>
-                            <h2  className='font-sans text-2xl font-bold'>{items.heading}</h2>
-                            <span>{items.date}</span>
+                            <h2  className='font-sans text-1xl font-bold'>{items.heading}</h2>
+                            <span className='font-sans text-sm font-bold '>{items.date}</span>
 
                         </div>
-                        <p>{items.description}</p>
+                        <span className='text-sm font-light'>{items.description}</span>
                         </div>  
                 ))}
             </div>

@@ -1,4 +1,4 @@
-import Image from 'next/image'
+
 import React from 'react'
 import { CiLinkedin } from 'react-icons/ci'
 import { FaGithub } from 'react-icons/fa'

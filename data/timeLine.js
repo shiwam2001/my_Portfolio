@@ -7,12 +7,12 @@ const data =[
     {
         heading:" Dive in Development",
         date:"Oct/2024 - Present",
-        description:"I wrote First line of code of development at that movement and with simple like everyone with HTML."
+        description:"I wrote First line of code of my development journey at that movement and with simple like everyone with HTML."
     },
     {
         heading:"Masters in Computer Applications",
         date:"Sep/2023 - May/2025",
-        description:"I learn what is coding and write my first code here. I learn about AI & Ml, Web technology and Cloud Computing, in scretch we built a IOT project witch a motion ditection car."
+        description:"I learned here what is coding and write my first line of code here. I learned about AI & Ml, Web technology, Cloud Computing, Internet of things, Mobile Computing and More... from scretch we built a IOT project which is a motion ditection car."
     },
     {
         heading:"Bachlor in Science",
