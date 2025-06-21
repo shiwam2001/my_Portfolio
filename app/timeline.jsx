@@ -16,7 +16,7 @@ const timeline = () => {
                             <span className='font-sans text-sm font-bold '>{items.date}</span>
 
                         </div>
-                        <span className='text-sm font-light'>{items.description}</span>
+                        <p className='text-sm '>{items.description}</p>
                         </div>  
                 ))}
             </div>

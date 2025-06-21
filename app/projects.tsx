@@ -17,7 +17,7 @@ const projects = () => {
                   alt='' />
                 <div className='flex justify-between '>
                     <h4>Employee task management system</h4>
-                    <a href=""><FaExternalLinkAlt 
+                    <a href="https://github.com/shiwam2001/Employee_Task_management_System-project"><FaExternalLinkAlt 
                     size={20}/></a>
                      
                 </div>  
@@ -31,7 +31,7 @@ const projects = () => {
                   alt='' />
                 <div className='flex justify-between '>
                     <h4>Job portal/ hirrd</h4>
-                    <a href=""><FaExternalLinkAlt 
+                    <a href="https://github.com/shiwam2001/JobPortal-Hirrd_Project"><FaExternalLinkAlt 
                     size={20}/></a>
                      
                 </div>    
@@ -45,7 +45,7 @@ const projects = () => {
                   alt='' />
                 <div className='flex justify-between '>
                     <h4>AI powered code reviwer</h4>
-                    <a href=""><FaExternalLinkAlt 
+                    <a href="https://github.com/shiwam2001/Ai_Powered_Code_Reviewer-Project"><FaExternalLinkAlt 
                     size={20}/></a>
                      
                 </div>
@@ -59,7 +59,7 @@ const projects = () => {
                   alt='' />
                 <div className='flex justify-between '>
                     <h4>Car markiting application</h4>
-                    <a href=""><FaExternalLinkAlt 
+                    <a href="https://github.com/shiwam2001/Powerd-Ai-Vehiql-markiting-app_Project"><FaExternalLinkAlt 
                     size={20}/></a>
                      
                 </div>

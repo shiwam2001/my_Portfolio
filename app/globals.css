@@ -12,11 +12,7 @@ body {
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.patrick-hand-regular {
-  font-family: "Patrick Hand", cursive;
-  font-weight: 200;
-  font-style: normal;
-}
+
 .flexn{
   
   margin: auto;
@@ -27,14 +23,25 @@ body {
 
 @media(max-width:700px){
   .flexn{
-    display: flex;
+  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  
+  
   margin: auto;
   max-width: 100vw;
   padding: 0 10px;
   }
+
+  .sm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    gap: 5;
+    margin-top: 20px;
+    font-size: larger;
+  }
+ 
 }
 
 
@@ -54,3 +61,27 @@ body {
 .weight{
   font-weight: 300;
 }
+
+#flexnn{
+  display: flex;
+  justify-content: space-between;
+  align-items:center ;
+  background-color: rgb(219, 228, 228);
+  max-width: 40vw;
+}
+
+
+@media(max-width:700px){
+ 
+  #flexnn{
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+    align-items:center ;
+    background-color: rgb(219, 228, 228);
+    
+    max-width: 100vw;
+    
+  }
+}
+

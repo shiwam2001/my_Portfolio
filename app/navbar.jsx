@@ -6,7 +6,7 @@ import { TbBrandLeetcode } from 'react-icons/tb'
 
 const navbar = () => {
   return (
-    <div className='flex justify-between'>
+    <div id='flexnn' className=' rounded-2xl p-3 items-center justify-between  '>
      <img 
      src="/img.jpg" 
      alt=""
@@ -14,7 +14,7 @@ const navbar = () => {
      height={40} 
      className='rounded-4xl'
      />
-      <div className='flex gap-3 mt-5' >
+      <div className='flex gap-3 ' >
         <div className='flex items-center gap-1 ' >
         
 

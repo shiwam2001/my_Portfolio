@@ -25,7 +25,7 @@ const navbar = () => {
           <p className='mt-5'>Designs and develops modern web applications using React, Node.js, Express, Django, MySQL and MongoDB. Currently pursuing MCA and building real-world projects to sharpen full-stack skills. Focused on building fast, responsive, and modern web applications that deliver real impact.</p>
 
         </div>
-        <div className='flex gap-3 mt-5' >
+        <div className='flex gap-3 mt-5 sm' >
         <div className='flex items-center gap-1 ' >
         <CiLinkedin
             size='25' />
