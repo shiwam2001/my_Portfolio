@@ -11,15 +11,15 @@ const navbar = () => {
         <Image 
         alt='profile'
         src="/img.jpg"
-        width={135}
+        width={130}
         height={140}
-        className='innerBorder flexn outerBorder '
+        className='innerBorder flex justify-center m-auto '
           />
         <h1 className='text-4xl fontn text-center mt-3'>Shiwam Pundir</h1>
         
         <div className='mt-5 '>
           <h3 className=' text-2xl mb-2'>Who am I?</h3>
-          <p className=' mt-5'>A passionate <b >Software Developer</b> based in <u>Noida, Uttar Pradesh, India</u> driven by creativity and clean code. Focused on creating interactive applications and experiences on the web. </p>
+          <p className=' mt-5'>A passionate <b className='underline'>Software Developer</b> based in <u>Noida, Uttar Pradesh, India</u> driven by creativity and clean code. Focused on creating interactive applications and experiences on the web. </p>
 
           <h3 className='ml-0 mt-20 text-2xl mb-2'>What do I do?</h3>
           <p className='mt-5'>Designs and develops modern web applications using React, Node.js, Express, Django, MySQL and MongoDB. Currently pursuing MCA and building real-world projects to sharpen full-stack skills. Focused on building fast, responsive, and modern web applications that deliver real impact.</p>
