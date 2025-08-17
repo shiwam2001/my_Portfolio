@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className=' '
+        className='inset-0 -z-10 rounded-xl bg-gradient-to-br from-[#ffecd2] via-[#fcb69f] to-[#a1c4fd]  '
       >
         {children}
       </body>

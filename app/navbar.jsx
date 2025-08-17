@@ -22,7 +22,7 @@ const navbar = () => {
 
 
   return (
-    <div id='flexnn' className={`flex justify-center fixed top-2 p-2 rounded-xl  w-full   shadow-md transition-all duration-500 z-50
+    <div id='flexnn' className={`flex justify-center fixed top-1  rounded-xl  w-full   shadow-md transition-all duration-500 z-50
         ${show ? "translate-y-0 opacity-100" : "translate-y-20 opacity-0"}
       `}>
      <img 

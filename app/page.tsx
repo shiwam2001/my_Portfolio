@@ -6,7 +6,7 @@ import Navbar from './navbar'
 import Services from './Services'
 const page = () => {
   return (
-    <div className='flexn '>
+    <div className='flexn  '>
       <Navbar/>
       
       <HeroNavbar/>
