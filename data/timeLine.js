@@ -2,7 +2,7 @@ const data =[
     {
         heading:"Traniee at C-DAC",
         date:"June/2025 - Present",
-        description:"I worked here at Reactjs and Nextjs Framework and make userfriendly and make real-world problem solving applications."
+        description:"I worked here at Nextjs Framework and make user-friendly and real-world problem solving applications in which used prisma for write database query and make the REST APIs to communicate  database."
     },
     {
         heading:" Dive in Development",

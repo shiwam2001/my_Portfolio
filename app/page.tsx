@@ -3,6 +3,7 @@ import HeroNavbar from './main'
 import Projects from './projects'
 import Footer from './timeline'
 import Navbar from './navbar'
+import Services from './Services'
 const page = () => {
   return (
     <div className='flexn '>
@@ -11,6 +12,8 @@ const page = () => {
       <HeroNavbar/>
 
       <Projects />
+
+      <Services/>
 
       <Footer/>
       

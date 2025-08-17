@@ -1,12 +1,30 @@
-
-import React from 'react'
+"use client"
+import React, { useEffect, useState } from 'react'
 import { CiLinkedin } from 'react-icons/ci'
 import { FaGithub } from 'react-icons/fa'
 import { TbBrandLeetcode } from 'react-icons/tb'
 
 const navbar = () => {
+
+  const [show,setShow]=useState(false)
+
+  useEffect(()=>{
+    const handleScroll=()=>{
+      if(window.scrollY > 200){
+        setShow(true)
+      } else setShow(false)
+    }
+
+    window.addEventListener('scroll',handleScroll)
+
+    return ()=> window.removeEventListener("scroll",handleScroll)
+  },[])
+
+
   return (
-    <div id='flexnn' className=' rounded-2xl p-3 items-center justify-between  '>
+    <div id='flexnn' className={`flex justify-center fixed top-2 p-2 rounded-xl  w-full   shadow-md transition-all duration-500 z-50
+        ${show ? "translate-y-0 opacity-100" : "translate-y-20 opacity-0"}
+      `}>
      <img 
      src="/img.jpg" 
      alt=""
