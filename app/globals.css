@@ -32,9 +32,10 @@ body {
   .flexn{
   display: flex;
   flex-direction: column;
-  margin-top: 10px;
-  
   margin: auto;
+  margin-top: 50px;
+  
+  
   max-width: 100vw;
   padding: 0 10px;
   max-width: 0 10px; 
