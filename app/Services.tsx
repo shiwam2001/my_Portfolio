@@ -105,7 +105,7 @@ const container = {
 export default function Services() {
   return (
     <section id="services" className="relative  mt-20 py-10 md:py-20">
-      <div className="absolute inset-0 -z-10 rounded-xl bg-gradient-to-br from-[#ffecd2] via-[#fcb69f] to-[#a1c4fd] opacity-30" />
+      <div className="absolute inset-0 -z-10 rounded-xl " />
 
       <motion.div
         variants={container}
@@ -129,7 +129,7 @@ export default function Services() {
             key={s.title}
             variants={variants}
               whileHover={{ y: -6 }}
-              className="group rounded-2xl border border-white/60 bg-white/70 backdrop-blur-md p-6 
+              className="group rounded-2xl border border-white/60 bg-white/70 backdrop-blur-md  bg-gradient-to-br from-pink-100 via-white to-sky-100 p-6 
                          shadow-[0_8px_24px_rgba(0,0,0,0.08)] hover:shadow-[0_16px_36px_rgba(161,196,253,0.35)] transition-all"
             >
               <div className={`mb-4 ${s.color}`}>{s.icon}</div>
