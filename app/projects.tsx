@@ -18,26 +18,14 @@ const variants: Variants = {
 
 const projectsData = [
   {
-    id: 1,
-    title: "Employee Task Management System",
-    image: "/p1.png",
-    link: "https://github.com/shiwam2001/Employee_Task_management_System-project",
-  },
-  {
     id: 2,
     title: "Job Portal / Hirrd",
-    image: "/p2.png",
-    link: "https://github.com/shiwam2001/JobPortal-Hirrd_Project",
-  },
-  {
-    id: 3,
-    title: "AI Powered Code Reviewer",
-    image: "/p3.png",
-    link: "https://github.com/shiwam2001/Ai_Powered_Code_Reviewer-Project",
+    image: "/p5.png",
+    link: "https://job-portal-hirrd-project.vercel.app/",
   },
   {
     id: 4,
-    title: "Car Marketing Application",
+    title: "Car Marketing Application [ Still in development ]",
     image: "/p4.png",
     link: "https://github.com/shiwam2001/Powerd-Ai-Vehiql-markiting-app_Project",
   },
