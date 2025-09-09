@@ -34,7 +34,7 @@ const timeline = () => {
             <a className='flex items-center gap-1' href="mailto:shiwamrajput4@gmail.com?subject=Contact%20Me&body=Hello%20Shiwam," > Email Me <FaExternalLinkAlt
                                 size={15}/> </a>
             
-            <a href="/Shiwam's_cv.pdf" download="Shiwam-resume.pdf" className='bg-blue-300 text-black px-4 py-2 rounded-lg hover:bg-blue-100 transition-all'>Downlord My Resume</a>              
+            <a href="Shiwam's_cv(18).pdf" download="Shiwam'cv.pdf"  className='bg-blue-300 text-black px-4 py-2 rounded-lg hover:bg-blue-100 transition-all'>Downlord My Resume</a>              
             </div>
 
         </div>
