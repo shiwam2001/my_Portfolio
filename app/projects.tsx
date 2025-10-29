@@ -23,11 +23,11 @@ const projectsData = [
     image: "/p5.png",
     link: "https://job-portal-hirrd-project.vercel.app/",
   },
+ 
   {
-    id: 4,
-    title: "Car Marketing Application [ Still in development ]",
-    image: "/p4.png",
-    link: "https://github.com/shiwam2001/Powerd-Ai-Vehiql-markiting-app_Project",
+    id: 5,
+    title: "CDAC Inventory Management System[ Still in development ]",
+    image: "/p6.png", 
   },
 ];
 
@@ -49,8 +49,8 @@ const Projects = () => {
       initial="hidden"
       animate="show"
     >
-      <h1 className="text-3xl font-bold mb-2">Projects</h1>
-      <p className="mb-6 text-gray-600">Showcasing some of my work.</p>
+      <h1 className="text-3xl text-center font-bold mb-2">Projects</h1>
+      <p className=" text-gray-600 font-medium text-center text-lg mb-10">Showcasing some of my work.</p>
 
       <div className="grid lg:grid-cols-2 sm:grid-cols-1 gap-6">
         {projectsData.map((project) => (

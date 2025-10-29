@@ -1,44 +1,50 @@
-import React from 'react'
-import data from '../data/timeLine'
-import { FaExternalLinkAlt } from 'react-icons/fa'
-const timeline = () => {
+'use client'
+import React from "react";
+import data from "../data/timeLine";
+import { FaExternalLinkAlt } from "react-icons/fa";
+import { motion } from "framer-motion";
 
-     const email = "shiwam@example.com";
-  const subject = "Job Opportunity";
-  const body = "Hello Shiwam, I want to connect with you.";
-
-  const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-
-
-
-
-    console.log(data)
-    return (
-        <div className='my-25 '>
-            <h3 className='text-3xl'>Timeline</h3>
-            <div className='flex flex-col gap-2 mt-5 '>
-                {data.map((items) => (
-                    <div key={items.heading}>
-                    <div  className='flex justify-between items-center'>
-                            <h2  className='font-sans text-1xl font-bold'>{items.heading}</h2>
-                            <span className='font-sans text-sm font-bold '>{items.date}</span>
-
-                        </div>
-                        <p className='text-sm '>{items.description}</p>
-                        </div>  
-                ))}
+const Timeline = () => {
+  return (
+    <section className="py-20 px-6 text-black">
+      <h3 className="text-3xl font-bold text-center mb-10">My Journey</h3>
+      <div className="flex flex-col gap-6 max-w-3xl mx-auto">
+        {data.map((item, i) => (
+          <motion.div
+            key={item.heading}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: i * 0.2 }}
+            viewport={{ once: true }}
+            className="p-4 border-l-4 border-blue-400 bg-white/5 rounded-lg shadow-md"
+          >
+            <div className="flex justify-between items-center">
+              <h2 className="text-lg font-semibold">{item.heading}</h2>
+              <span className="text-sm text-gray-400">{item.date}</span>
             </div>
-            <div className='flex items-center gap-5 mt-4'>
+            <p className="text-gray-700 mt-2">{item.description}</p>
+          </motion.div>
+        ))}
+      </div>
 
-    
-            <a className='flex items-center gap-1' href="mailto:shiwamrajput4@gmail.com?subject=Contact%20Me&body=Hello%20Shiwam," > Email Me <FaExternalLinkAlt
-                                size={15}/> </a>
-            
-            <a href="Shiwam's_cv(18).pdf" download="Shiwam'cv.pdf"  className='bg-blue-300 text-black px-4 py-2 rounded-lg hover:bg-blue-100 transition-all'>Downlord My Resume</a>              
-            </div>
+      <div className="flex justify-center gap-6 mt-10">
+        <a
+          href="mailto:shiwamrajput4@gmail.com?subject=Contact%20Me&body=Hello%20Shiwam,"
+          className="flex items-center gap-2 text-blue-400 hover:underline"
+        >
+          Email Me <FaExternalLinkAlt size={14} />
+        </a>
 
-        </div>
-    )
-}
+        <a
+          href="Shiwam's_cv(21).pdf"
+          download="Shiwam_cv.pdf"
+          className="bg-gradient-to-r from-blue-500 to-purple-500 px-5 py-2 rounded-xl text-white font-semibold hover:scale-105 transition-transform"
+        >
+          Download My Resume
+        </a>
+      </div>
+    </section>
+  );
+};
 
-export default timeline
+export default Timeline;

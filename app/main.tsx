@@ -1,68 +1,87 @@
-import Image from 'next/image'
-import React from 'react'
-import { CiLinkedin } from 'react-icons/ci'
-import { FaGithub } from 'react-icons/fa'
-import { TbBrandLeetcode } from 'react-icons/tb'
-import TypingEffect from "./typed"
+'use client';
+import React from "react";
+import Image from "next/image";
+import { CiLinkedin } from "react-icons/ci";
+import { FaGithub } from "react-icons/fa";
+import { TbBrandLeetcode } from "react-icons/tb";
+import TypingEffect from "./typed";
+import { motion } from "framer-motion";
 
-const navbar = () => {
+const Main = () => {
   return (
+    <section className="min-h-screen flex flex-col items-center justify-center text-gray-700 text-center px-6">
+      <motion.div
+        initial={{ scale: 0.8, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 0.8 }}
+      >
+        <Image
+          src="/img.jpg"
+          alt="profile"
+          width={150}
+          height={150}
+          className="rounded-full border-4 border-blue-400 shadow-xl"
+        />
+      </motion.div>
 
-    <div className='flexn    ' >
-      <Image
-        alt='profile'
-        src="/img.jpg"
-        width={130}
-        height={140}
-        className='innerBorder flex justify-center m-auto '
-      />
-
-      <main className="flex items-center mt-2 justify-center ">
+      <div className="mt-6">
         <TypingEffect />
-      </main>
-
-      <div className='mt-5 '>
-        <h3 className=' text-2xl mb-2'>Who am I?</h3>
-        <p className=' mt-5'>A passionate <b className='underline'>Software Developer</b> based in <u>Noida, Uttar Pradesh, India</u> driven by creativity and clean code. Focused on creating interactive applications and experiences on the web. </p>
-
-        <h3 className='ml-0 mt-20 text-2xl mb-2'>What do I do?</h3>
-        <p className='mt-5'>Designs and develops modern web applications using React, Node.js, Express, Django, MySQL and MongoDB. Currently pursuing MCA and building real-world projects to sharpen full-stack skills. Focused on building fast, responsive, and modern web applications that deliver real impact.</p>
-
-      </div>
-      <div className='flex gap-3 mt-5 sm' >
-        <div className='flex items-center gap-1 px-4 py-2 rounded-lg text-gray-700 font-semibold shadow-md 
-  bg-gradient-to-r from-pink-300 via-purple-300 to-sky-300 
-  bg-[length:400%_400%] animate-gradientMove ' >
-          <CiLinkedin
-            size='25' />
-
-          <button className=''>
-            <a href="https://www.linkedin.com/in/shiwam-pundi0b8173298r-/">Linkedin</a></button>
-        </div>
-
-        <div className='flex items-center gap-1 px-4 py-2 rounded-lg text-gray-700 font-semibold shadow-md 
-  bg-gradient-to-r from-pink-300 via-purple-300 to-sky-300 
-  bg-[length:400%_400%] animate-gradientMove ' >
-          <FaGithub
-            size='25' />
-
-          <button className=''><a href="https://github.com/shiwam2001">Github</a></button>
-        </div>
-
-        <div className='flex items-center gap-1 px-4 py-2 rounded-lg text-gray-700 font-medium  shadow-md 
-  bg-gradient-to-r from-pink-300 via-purple-300 to-sky-300 
-  bg-[length:400%_400%] animate-gradientMove ' >
-          <TbBrandLeetcode size={25} />
-
-          <button className=' text-gray-700'><a href="https://leetcode.com/u/k0mr2WykmF/">Leetcode</a></button>
-        </div>
       </div>
 
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.3 }}
+        className="max-w-2xl mt-8"
+      >
+        <h3 className="text-2xl font-semibold mb-3">Who am I?</h3>
+        <p className="text-gray-700 leading-relaxed">
+          A passionate <b className="text-blue-400">Software Developer</b> from{" "}
+          <u>Noida, Uttar Pradesh</u>, focused on building interactive and
+          performant web experiences.
+        </p>
 
-    </div>
+        <h3 className="text-2xl font-semibold mt-10 mb-3">What do I do?</h3>
+        <p className="text-gray-700 leading-relaxed">
+          I develop modern web apps using <b>React</b>, <b>Node.js</b>,{" "}
+          <b>Express</b>, <b>MongoDB</b>, and <b>MySQL</b>. Currently pursuing
+          MCA and constantly improving my full-stack skills by working on real
+          projects.
+        </p>
+      </motion.div>
 
+      <div className="flex flex-wrap justify-center gap-4 mt-10">
+        {[
+          {
+            icon: <CiLinkedin size={22} />,
+            link: "https://www.linkedin.com/in/shiwam-pundi0b8173298r-/",
+            label: "LinkedIn",
+          },
+          {
+            icon: <FaGithub size={22} />,
+            link: "https://github.com/shiwam2001",
+            label: "GitHub",
+          },
+          {
+            icon: <TbBrandLeetcode size={22} />,
+            link: "https://leetcode.com/u/k0mr2WykmF/",
+            label: "LeetCode",
+          },
+        ].map((btn, i) => (
+          <a
+            key={i}
+            href={btn.link}
+            target="_blank"
+            className="flex items-center gap-2 px-5 py-2 rounded-xl font-semibold 
+            bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 
+            hover:scale-105 transition-transform duration-300 shadow-md"
+          >
+            {btn.icon} {btn.label}
+          </a>
+        ))}
+      </div>
+    </section>
+  );
+};
 
-  )
-}
-
-export default navbar
+export default Main;

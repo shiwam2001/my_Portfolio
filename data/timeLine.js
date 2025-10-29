@@ -1,24 +1,34 @@
-const data =[
-    {
-        heading:"Traniee at C-DAC",
-        date:"June/2025 - Present",
-        description:"I worked here at Nextjs Framework and make user-friendly and real-world problem solving applications in which used prisma for write database query and make the REST APIs to communicate  database."
-    },
-    {
-        heading:" Dive in Development",
-        date:"Oct/2024 - Present",
-        description:"I wrote First line of code of my development journey at that movement and with simple like everyone with HTML."
-    },
-    {
-        heading:"Masters in Computer Applications",
-        date:"Sep/2023 - May/2025",
-        description:"I learned here what is coding and write my first line of code here. I learned about AI & Ml, Web technology, Cloud Computing, Internet of things, Mobile Computing and More... from scretch we built a IOT project which is a motion ditection car."
-    },
-    {
-        heading:"Bachlor in Science",
-        date:"Sep/2020 - June/2023",
-        description:"I learn there about core concepts about mathematics and physics",
-    }
-]
+const data = [
+  {
+    heading: "Intern — Software Developer at C-DAC",
+    date: "June 2025 – Present",
+    description:
+      "Currently interning at C-DAC, where I’m working on building secure and scalable web applications using Next.js and Prisma ORM. I focus on crafting efficient REST APIs, managing databases, and developing interactive front-end interfaces that solve real-world problems.",
+  },
+  {
+    heading: "Trainee — Advanced Web Development at C-DAC",
+    date: "April 2025 – June 2025",
+    description:
+      "Completed hands-on training in modern full-stack development with Next.js, Node.js, and PostgreSQL. Gained deep insight into backend optimization, authentication, and performance tuning for enterprise-level applications.",
+  },
+  {
+    heading: "Diving into Web Development",
+    date: "Oct 2024 – April 2025",
+    description:
+      "Started my development journey with HTML and CSS, exploring how simple code can create powerful user experiences. Gradually advanced into JavaScript and React, igniting a strong passion for modern web technologies.",
+  },
+  {
+    heading: "Master’s in Computer Applications (MCA)",
+    date: "Sep 2023 – May 2025",
+    description:
+      "Pursuing MCA with a focus on Web Technologies, Cloud Computing, and Artificial Intelligence. Developed multiple academic projects including an IoT Motion Detection Car and an AI-Powered Code Reviewer, gaining strong technical and analytical skills.",
+  },
+  {
+    heading: "Bachelor of Science (B.Sc.)",
+    date: "Sep 2020 – June 2023",
+    description:
+      "Built a strong foundation in core subjects like Mathematics and Physics. Developed analytical and logical reasoning skills that continue to enhance my programming and problem-solving abilities.",
+  },
+];
 
-export default data
+export default data;

@@ -1,62 +1,81 @@
-"use client"
-import React, { useEffect, useState } from 'react'
-import { CiLinkedin } from 'react-icons/ci'
-import { FaGithub } from 'react-icons/fa'
-import { TbBrandLeetcode } from 'react-icons/tb'
+"use client";
+import React, { useEffect, useState } from "react";
+import { CiLinkedin } from "react-icons/ci";
+import { FaGithub } from "react-icons/fa";
+import { TbBrandLeetcode } from "react-icons/tb";
+import Image from "next/image";
 
-const navbar = () => {
+const Navbar = () => {
+  const [show, setShow] = useState(false);
 
-  const [show,setShow]=useState(false)
-
-  useEffect(()=>{
-    const handleScroll=()=>{
-      if(window.scrollY > 200){
-        setShow(true)
-      } else setShow(false)
-    }
-
-    window.addEventListener('scroll',handleScroll)
-
-    return ()=> window.removeEventListener("scroll",handleScroll)
-  },[])
-
+  useEffect(() => {
+    const handleScroll = () => {
+      setShow(window.scrollY > 100);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <div id='flexnn' className={`flex justify-center fixed top-1  rounded-xl  w-full   shadow-md transition-all duration-500 z-50
-        ${show ? "translate-y-0 opacity-100" : "translate-y-20 opacity-0"}
-      `}>
-     <img 
-     src="/img.jpg" 
-     alt=""
-     width={40}
-     height={40} 
-     className='rounded-4xl'
-     />
-      <div className='flex gap-3 ' >
-        <div className='flex items-center gap-1 ' >
-        
+    <nav
+      className={`fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[92%] md:w-[65%]
+      rounded-2xl px-6 py-3 flex items-center justify-between border 
+      transition-all duration-700 
+      ${show ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-10"}
+      backdrop-blur-2xl border-white/30 shadow-[0_8px_30px_rgba(0,0,0,0.1)]
+      bg-[linear-gradient(135deg,rgba(255,255,255,0.45)_0%,rgba(209,233,255,0.55)_100%)]`}
+    >
+      {/* Left Profile Section */}
+      <div className="flex items-center gap-3">
+        <Image
+          src="/img.jpg"
+          alt="profile"
+          width={42}
+          height={42}
+          className="rounded-full border border-white/50 shadow-sm"
+        />
+        <span className="text-gray-800 font-semibold text-sm md:text-base tracking-wide">
+          Shiwam Pundir
+        </span>
+      </div>
 
-            <button className=''>
-              <a href="https://www.linkedin.com/in/shiwam-pundi0b8173298r-/"><CiLinkedin
-            size='25' /></a></button>
-        </div>
-        
-        <div className='flex items-center gap-1 ' >
-            
+      {/* Social Icons */}
+      <div className="flex gap-4">
+        <a
+          href="https://www.linkedin.com/in/shiwam-pundi0b8173298r-/"
+          target="_blank"
+          className="group"
+        >
+          <CiLinkedin
+            size={23}
+            className="text-gray-700 group-hover:text-blue-500 transition-transform duration-300 group-hover:scale-110"
+          />
+        </a>
 
-            <button className=''><a href="https://github.com/shiwam2001"><FaGithub
-            size='25' /></a></button>
-        </div>
+        <a
+          href="https://github.com/shiwam2001"
+          target="_blank"
+          className="group"
+        >
+          <FaGithub
+            size={22}
+            className="text-gray-700 group-hover:text-gray-900 transition-transform duration-300 group-hover:scale-110"
+          />
+        </a>
 
-        <div className='flex items-center gap-1 ' >
-        
+        <a
+          href="https://leetcode.com/u/k0mr2WykmF/"
+          target="_blank"
+          className="group"
+        >
+          <TbBrandLeetcode
+            size={22}
+            className="text-gray-700 group-hover:text-yellow-500 transition-transform duration-300 group-hover:scale-110"
+          />
+        </a>
+      </div>
+    </nav>
+  );
+};
 
-            <button className=''><a href="https://leetcode.com/u/k0mr2WykmF/"><TbBrandLeetcode size={25} /></a></button>
-        </div>
-        
-        </div>
-    </div>
-  )
-}
-
-export default navbar
+export default Navbar;
